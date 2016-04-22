@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+				
+	<meta charset="UTF-8">
+	<title>Ejercicio, Galeria con Flexbox</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="css/estilo.css">   
+    <script type="text/javascript" src="js/fecha.js"></script>  
+     <header>
+             
+            <ul id="menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li>
+        <a href="#">Galerias</a>
+        <ul>
+            <li><a href="galeriaperro.html">Perros</a></li>
+            <li><a href="galeriagato.html">Gatos</a></li>
+             
+            
+        </ul>
+    </li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    
+    <li><a href="apadrina.html">Apadrina</a></li>
+    <li><a href="contacto.html">Contactos</a></li>
+</ul>           
+
+        </header>
+									
+	<style>
+
+		body { 
+
+			margin: 0; 
+			background: #333; 
+		}
+		section.galeria { 
+		  padding: .5vw;
+		  font-size: 0;
+		  -ms-flex-wrap: wrap;
+		  -ms-flex-direction: column;
+		  -webkit-flex-flow: row wrap; 
+		  flex-flow: row wrap; 
+		  display: -webkit-box;
+		  display: flex;
+		  display: -ms-flexbox; /*IE 10*/
+		  margin: 5% ;
+		}
+		section.galeria div { 
+		  -webkit-box-flex: auto;
+		  -ms-flex: auto;
+		  flex: auto; 
+		  width: 200px; 
+		  margin: .5vw; 
+		}
+		section.galeria div img { 
+		  width: 100%; 
+		  height: auto; 
+		}
+		/*Media Queries*/
+		@media screen and (max-width: 400px) {
+		  section.galeria div { margin: 0; }
+		  section.galeria { padding: 0; }
+		}
+	</style>
+</head>
+<body style="background:#FFFFFF">
+	<section class="galeria">
+		<div><img src="media/gato1.png" alt="imagen"></div>
+		<div><img src="media/gato2.png" alt></div>
+		<div><img src="media/gato3.png" alt></div>
+		<div><img src="media/gato4.png" alt></div>
+		<div><img src="media/gato5.png" alt></div>
+		<div><img src="media/gato6.png" alt></div>
+		<div><img src="media/gato7.png" alt></div>
+		<div><img src="media/gato8.png" alt></div>
+		<div><img src="media/gato9.png" alt></div>
+		<div><img src="media/gato10.png" alt></div>
+
+		
+    </section>
+    
+        <!-- Pie de pagina -->
+        <footer>
+                <a href="#">Trabajo Colabarotivo 01</a>
+        </footer>
+
+
+
+</body>
+</html>
